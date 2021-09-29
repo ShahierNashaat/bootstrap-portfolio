@@ -70,7 +70,7 @@ body {
   color: #172b4d;
 }
 
-.headline .icons {
+.icons{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ body {
   padding-left: 0;
 }
 
-.headline .icons a {
+.headline .icons a, footer .icons a {
   text-decoration: none;
   color: #505f79;
   margin: 0 15px;
@@ -258,4 +258,122 @@ body {
 	.work .recent .green-line {
     display: none;
   }
+
+  .about-me .about-me-contnt {
+    background-image: url("images/illustration-about-me-2-desktop@2x.png"), url("images/Frame-desktop.png");
+    background-position: left 200px, right top;
+    background-size: 20%, auto;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .about-me .about-me-contnt h2 {
+    padding-block: 192px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+  
+  .about-me .about-me-contnt p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #42526e;
+  }
+
+  .about-me .about-me-contnt .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-me .row {
+    justify-content: center;
+
+  }
+
+  .about-me .row .card {
+    background: #ebf0ee;
+  }
+
+  .placeholder-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .about-me .row .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me .row .card h3 {
+    padding-top: 64px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #344563;
+  }
+
+  .about-me .row .card ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-me .row .card ul li {
+    display: inline-block;
+    margin: 0 3px;
+    margin-top: 8px;
+    padding: 12px;
+    color: #36b37e;
+    background-color: #fff;
+    letter-spacing: 0.03em;
+    border-radius: 8px;
+  }
+
+  .about-me  .row > * {
+    flex-basis: 367px;
+    flex-shrink: 1;
+  }
+
+  .about-me .row {
+    padding: 0 24px;
+    padding-top: 59px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .contact-form {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .contact-form h2 {
+    flex-basis: 30%;
+    flex-shrink: 1;
+    padding: 10px;
+  }
+
+  .contact-form form {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    padding: 10px;
+  }
+
 }
