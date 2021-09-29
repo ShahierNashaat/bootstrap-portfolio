@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container-fluid .navbar-brand,
+.navbar-light .navbar-toggler {
+  color: black;
+  border-color: white;
+}
+
+.headline {
+  background-image: url("images/header-illsutration-mobile@2x.png");
+  height: 726px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.headline .head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation-name: grow-height;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes grow-height {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 40px;
+  }
+}
+  
+.headline .head h2,
+.headline .head h1 {
+  font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 52px;
+	text-align: center;
+}
+
+.headline .head h2:first-child {
+  color: #172b4d;
+  margin-bottom: 10px;
+}
+
+.headline .head h2:nth-child(2) {
+  color: #36b37e;
+  margin-top: 0;
+}
+
+.headline .head p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin: 30px 0;
+  width: 90%;
+  color: #172b4d;
+}
+
+.headline .icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.headline .icons a {
+  text-decoration: none;
+  color: #505f79;
+  margin: 0 15px;
+}
+
+.headline .circle {
+  border: 1px solid #dfe1e6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.headline .down-arrow {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 37%;
+  left: 40%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #acb7c3;
+  border-bottom: 2px solid #acb7c3;
+}
+
+.work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	margin-bottom: 50px;
+}
+
+.work .recent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.work .recent h2 {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 24px 0;
+  color: #172b4d;
+  width: 90%;
+  height: 97px;
+}
+
+.work .recent .green-line {
+  background: #36b37e;
+  border-radius: 24px;
+  width: 48px;
+  height: 4px;
+  margin: 24px 0;
+}
+
+.work .cards {
+	justify-content: center;
+	gap: 88px;
+}
+
+.work .cards .card {
+  height: 570px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+	width: min-content;
+	transition-property: margin-top, box-shadow;
+  transition-duration: 0.2s;
+}
+
+.work .cards .card:hover {
+  margin-top: -10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work .cards .card img {
+  width: 100%;
+  height: 50%;
+}
+
+.work .cards .card .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work .cards .card .text-block h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+  margin: 16px 0;
+  width: 295px;
+  height: 57px;
+}
+
+.work .cards .card .text-block ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.work .cards .card .text-block ul li {
+  border-radius: 4px;
+  padding: 8px 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.work .cards .card .text-block ul li {
+  margin: 4px 8px;
+  background: #ebf0ee;
+  color: #3a4a42;
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+    background-image: url("images/Header-llustration-desktop@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar>.container-fluid {
+    justify-content: center !important;
+  }
+
+  #navbarNav {
+    flex-grow: unset;
+    justify-content: space-between;
+  }
+
+  .navbar-nav li {
+    margin: 0 25px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+      color: #344563;
+  }
+
+	.headline {
+    background: none;
+  }
+
+	.headline h1,
+  .headline h2 {
+    margin: 15px 0;
+  }
+
+  .headline .head p {
+    width: 60%;
+    margin: 15px 0;
+  }
+
+	.work {
+		margin-top: 195px;
+	}
+
+	.work .recent h2 {
+		width: 100%;
+	}
+
+	.work .cards {
+		gap: 88px;
+	}
+
+	.work .recent .green-line {
+    display: none;
+  }
+}
